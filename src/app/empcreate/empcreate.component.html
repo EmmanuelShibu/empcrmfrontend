@@ -1,1 +1,33 @@
-<p>empcreate works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form class="border p-3 mt-5 shadow" action="" [formGroup]="empForm" (ngSubmit)="addEmployee()">
+                <h3 class="text-center">CREATE EMPLOYEE</h3>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="ENTER YOUR NAME" formControlName="name">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="ENTER YOUR DEPARTMENT" formControlName="department">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="ENTER YOUR SALARY" formControlName="salary">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="ENTER YOUR ADDRESS" formControlName="address">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="ENTER YOUR PHONE NUMBER" formControlName="phone">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="ENTER YOUR EMAIL" formControlName="email">
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="ADD" class="form-control btn btn-outline-primary" >
+            </div>
+            </form>
+
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

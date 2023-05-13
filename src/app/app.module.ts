@@ -7,6 +7,9 @@ import { EmpcreateComponent } from './empcreate/empcreate.component';
 import { EmplistComponent } from './emplist/emplist.component';
 import { EmpdetailComponent } from './empdetail/empdetail.component';
 import { EmpupdateComponent } from './empupdate/empupdate.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { EmpupdateComponent } from './empupdate/empupdate.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

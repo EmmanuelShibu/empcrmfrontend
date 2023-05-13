@@ -1,0 +1,37 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  
+  a {
+    color: #FFFFFF;
+  }
+  
+  .card {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+  }
+  
+  .card-header {
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+  }
+  
+  .list-group-item {
+    background-color: #1F1F1F;
+    border-color: #2C2C2C;
+    color: #FFFFFF;
+  }
+  
+  .btn-primary {
+    background-color: #000000;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+  

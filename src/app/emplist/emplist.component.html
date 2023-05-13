@@ -1,1 +1,35 @@
-<p>emplist works!</p>
+<div class="container">
+    <h1 class="text-center mb-5">Employee List</h1>
+    <a routerLink="emp-add" class="btn btn-outline-danger">ADD NEW EMPLOYEE</a>
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Salary</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees" class="employee-row">
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.department }}</td>
+          <td>{{ employee.salary }}</td>
+          <td>{{ employee.address }}</td>
+          <td>{{ employee.phone }}</td>
+          <td>{{ employee.email }}</td>
+          <td>
+            <div class="btn-group">
+              <a class="btn btn-sm btn-primary" href="" [routerLink]="['emp-detail',employee.id]">VIEW</a>
+              <a class="btn btn-sm btn-info" href="" [routerLink]="['emp-edit',employee.id]">UPDATE</a>
+              <button class="btn btn-sm btn-danger" (click)="deleteEmployee(employee.id)" >DELETE</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

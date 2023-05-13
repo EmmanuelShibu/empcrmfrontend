@@ -1,1 +1,23 @@
-<p>empdetail works!</p>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Employee Information
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Name:</strong> {{employee.name}}</li>
+            <li class="list-group-item"><strong>Department:</strong> {{employee.department}}</li>
+            <li class="list-group-item"><strong>Salary:</strong> {{employee.salary}}</li>
+            <li class="list-group-item"><strong>Address:</strong> {{employee.address}}</li>
+            <li class="list-group-item"><strong>Phone:</strong> {{employee.phone}}</li>
+            <li class="list-group-item"><strong>Email:</strong> {{employee.email}}</li>
+          </ul>
+          <div class="card-footer">
+            <a class="btn btn-sm btn-primary" href="#" routerLink="">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
